@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Parallax Template - Materialize</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+	<title>Parallax Template - Materialize</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
-	<nav class="white" role="navigation">
+	<!-- Nav bar -->
+	 <nav class="white" role="navigation">
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="#" class="brand-logo">Krayons 4 Keyna</a>
 			<ul class="right hide-on-med-and-down">
@@ -29,219 +31,392 @@
 		</div>
 	</nav>
 
-	<!-- Top index banner -->
-	 <div id="index-banner" class="parallax-container">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<br><br>
-				<h1 class="header center teal-text text-lighten-2" style="margin: 18%;">K4K logo here</h1>
-				<!-- <div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-				<div class="row center">
-					<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-				</div> -->
-				<br><br>
-			</div>
-		</div>
-		<div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
-	</div>
+	<!-- Content -->
+	 <div id="skrollr-body">
+		<div id="non-skrollr">
 
-	<!-- About us -->
-	 <div class="container">
-		<div class="section">
-
-			<div class="row">
-				<div class="col s12 center">
-					<h3><i class="mdi-content-send brown-text"></i></h3>
-					<h4>About Us</h4>
-					<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<!-- 2nd divider -->
-	 <div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-			</div>
-		</div>
-		<div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-	</div>
-
-	<!-- Three sections -->
-	 <div class="container">
-		<div class="section">
-
-			<!--   Icon Section   -->
-			<div class="row">
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-						<h5 class="center">Speeds up development</h5>
-
-						<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+		   	<!-- Top index banner -->
+			 <div id="index-banner" class="parallax-container">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2" style="margin: 18%;">K4K logo here</h1>
+						<!-- <div class="row center">
+							<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+						</div>
+						<div class="row center">
+							<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+						</div> -->
+						<br><br>
 					</div>
 				</div>
+				<div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+			</div>
 
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center brown-text"><i class="material-icons">group</i></h2>
-						<h5 class="center">User Experience Focused</h5>
+			<!-- About us (What are we) -->
+			 <div class="container">
+				<div class="section">
 
-						<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+					<div class="row">
+						<div class="col s12 center">
+							<h3><i class="mdi-content-send brown-text"></i></h3>
+							<h4>About Us</h4>
+							<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 2nd divider -->
+			 <div class="parallax-container valign-wrapper">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<div class="row center">
+							<h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+						</div>
 					</div>
 				</div>
+				<div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+			</div>
 
-				<div class="col s12 m4">
-					<div class="icon-block">
-						<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-						<h5 class="center">Easy to work with</h5>
+			<!-- Our Story (How we came to be) -->
+			 <div class="container">
+				<div class="section">
 
-						<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+					<!-- Title and Explanation of section -->
+					 <div class="row">
+						<div class="col s12 center">
+							<h3><i class="mdi-content-send brown-text"></i></h3>
+							<h4>Our Story</h4>
+							<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. </p>
+						</div>
+					</div>
+					
+					<!-- Three fundamental parts of our story -->
+					 <div class="row">
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+								<h5 class="center">Speeds up development</h5>
+
+								<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+								<h5 class="center">User Experience Focused</h5>
+
+								<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+								<h5 class="center">Easy to work with</h5>
+
+								<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+
+			<!-- 3rd divider -->
+			 <div class="parallax-container valign-wrapper">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<div class="row center">
+							<h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+			</div>
+
+			<!-- Join Us (How you can get started) -->
+			 <div class="container">
+				<div class="section">
+
+					<!-- Title and Explanation of section -->
+					 <div class="row">
+						<div class="col s12 center">
+							<h3><i class="mdi-content-send brown-text"></i></h3>
+							<h4>Join Us</h4>
+							<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. </p>
+						</div>
+					</div>
+					
+					<!-- Three fundamental parts of our story -->
+					 <div class="row">
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+								<h5 class="center">Speeds up development</h5>
+
+								<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">group</i></h2>
+								<h5 class="center">User Experience Focused</h5>
+
+								<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+							</div>
+						</div>
+
+						<div class="col s12 m4">
+							<div class="icon-block">
+								<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+								<h5 class="center">Easy to work with</h5>
+
+								<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 4th divider -->
+			 <div class="parallax-container valign-wrapper">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<div class="row center">
+							<h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+						</div>
+					</div>
+				</div>
+				<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+			</div>
+
 		</div>
 	</div>
-		
-	<!-- Contact us
-	 <div class="container">
-		<div class="section">
 
-			<div class="row">
-				<div class="col s12 center">
-					<h3><i class="mdi-content-send brown-text"></i></h3>
-					<h4>Contact Us</h4>
-					<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-				</div>
-			</div>
+	<!-- Scrolling cards -->
+     <div class="row height-container">
 
-		</div>
-	</div> -->
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            One
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 1 - Get an account on GitHub.</div>
+                    <b>Get an account on GitHub,</b> and verify your email. Remember that the username you choose will be the domain name of your website (unless you want to pay for a .com or something). Click on the button below to see detailed instructions regarding how you can accomplish this without getting your dick caught on a ceiling fan (or an oven, for that matter).
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
 
-	<!-- 3rd divider -->
-	 <div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-				</div>
-			</div>
-		</div>
-		<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-	</div>
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Two
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 2 - Fork this repository.</div>
+                    Now that you have an account on GitHub, you can safely go<a href="https://github.com/naveenshaji/material/"> here</a>and fork that repo. Just click on the tiny icon in top-right that says '<b>Fork</b>'. In case you have trouble finding said button, or if you want to know what forking or repository means and all that git-technical stuff, click on the button below.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
 
-	<!-- Footer -->
-	 <footer class="page-footer teal">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Company Bio</h5>
-					<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Settings</h5>
-					<ul>
-						<li><a class="white-text" href="#!">Link 1</a></li>
-						<li><a class="white-text" href="#!">Link 2</a></li>
-						<li><a class="white-text" href="#!">Link 3</a></li>
-						<li><a class="white-text" href="#!">Link 4</a></li>
-					</ul>
-				</div>
-				<div class="col l3 s12">
-					<h5 class="white-text">Connect</h5>
-					<ul>
-						<li><a class="white-text" href="#!">Link 1</a></li>
-						<li><a class="white-text" href="#!">Link 2</a></li>
-						<li><a class="white-text" href="#!">Link 3</a></li>
-						<li><a class="white-text" href="#!">Link 4</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-			</div>
-		</div>
-	</footer>
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Three
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 3 - Rename forked repository.</div>
+                    Go to the newly-forked repository's settings and edit its name to "<b>(username).github.io</b>" (without the quotes). Like for example naveenshaji.github.io or yournamehere.github.io &nbsp; <b>It should be your github username though</b>. If you don't know what your github username is, or how to rename said repository, or if you forgot what you were doing on this website, click the button below.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
 
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Four
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 4 - Change to master branch</div>
+                    Go to the newly-forked repository's settings and change the <b>default branch</b> to <b>master</b> from the drop-down menu. All your changes from now on must be done in the <b>master</b> branch. You may optionally delete the gh-pages branch to avoid accidentally pushing your changes to that branch, in which case you won't see the changes. Click button below for detailed instructions on how to acheive this.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Five
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 5 - Visit your website.</div>
+                    Open the "<b>_config.yml</b>" file on GitHub and click edit. Set the baseurl to "".
+                    Go to <b>http://(username).github.io/</b> If you see a website similar to this then you have successfully set up a material website. If not, then check your email to see if GitHub has sent you any page-build warnings or click on the troubleshooting button below. The button also helps if you don't know how to get to a website.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Six
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 6 - Configuration.</div>
+                    Open the "<b>_config.yml</b>" file again. Click edit, and change the <b>title</b> property to the name you want displayed as title on your website and save. Changes should be visible on the site in a few minutes. Mess around with other values in the file. If you break something, revert. Click button below to see the rest of the stuff you can edit on this file including changing color themes.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Seven
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Step - 7 - Adding posts to blog.</div>
+                    The final step is a rather long one which aims to introduce you to markdown. Basically you just write your post on a new file created in your repo's "<b>_posts</b>" directory in a specific format, and it appears automatically on your website. Click the button below to learn more, including how to add images and links to your posts.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Support
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Ran into issues?</div>
+                    No sweat. Just go <a href="https://github.com/naveenshaji/material/issues/new">here</a> and let me know via that form, what issues you are experiencing regarding the set-up procedure. You can also report issues regarding bugs and feature requests.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            Problem?
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Troubleshooting</div>
+                    Scroll through al the cards in this list all over again and read every single line to check if you've been correctly following. If your changes are not showing or if you see a page with just text, then you probably messed up steps 4 and 5. In case tou get a 404 error, then recheck steps 3-5. Click button below for more troubleshooting help.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-1">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
+                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            <3
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title"><b>material</b> by <b>naveenshaji</b></div>
+                    Thanks to MaterializeCSS, Skrollr, Scrolline.js, Jekyll and GitHub.<br>
+                    They form an <b>integral part</b> of this project.<br>
+                    And material would not have been possible without them awesome <b>open-source</b> frameworks.<br>
+                    &copy; 2015 naveenshaji - Released under the <b>MIT Licence</b>.
+                </div>
+                <div class="card-action {{ site.css }} darken-2">
+                    <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">Tech involved</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'> Get the code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/jquery.nicescroll.plus.js"></script>
+	<script src="js/velocity.min.js"></script>
+	<script src="js/skrollr.min.js"></script>
+	<script src="js/jquery.scrolline.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
 
   </body>
 </html>
 
 
-	<!-- preserve content 
-		Three sections 
-		 <div class="container">
-			<div class="section">
-
-				<div class="row">
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-							<h5 class="center">Speeds up development</h5>
-
-							<p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center brown-text"><i class="material-icons">group</i></h2>
-							<h5 class="center">User Experience Focused</h5>
-
-							<p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-						</div>
-					</div>
-
-					<div class="col s12 m4">
-						<div class="icon-block">
-							<h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-							<h5 class="center">Easy to work with</h5>
-
-							<p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		Divider
-		 <div class="parallax-container valign-wrapper">
-			<div class="section no-pad-bot">
-				<div class="container">
-					<div class="row center">
-						<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-					</div>
-				</div>
-			</div>
-			<div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-		</div>
-			
-		Contact us
-		 <div class="container">
-			<div class="section">
-
-				<div class="row">
-					<div class="col s12 center">
-						<h3><i class="mdi-content-send brown-text"></i></h3>
-						<h4>Contact Us</h4>
-						<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-					</div>
-				</div>
-
-			</div>
-		</div> 
-	-->
