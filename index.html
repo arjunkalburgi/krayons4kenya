@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-	<title>Parallax Template - Materialize</title>
+	<title>Krayons 4 Keyna</title>
 
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,19 +17,25 @@
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="#" class="brand-logo">Krayons 4 Keyna</a>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Donate</a></li>
-				<li><a href="#">Timeline</a></li>
+				<li><a id="aboutScroll">About Us</a></li>
+				<li><a id="storyScroll">Our Story</a></li>
+				<li><a id="joinScroll">Join Us</a></li>
+				<li><a id="timelineScroll">Timeline</a></li>
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Donate</a></li>
-				<li><a href="#">Timeline</a></li>
+				<li><a id="aboutScroll">About Us</a></li>
+				<li><a id="storyScroll">Our Story</a></li>
+				<li><a id="joinScroll">Join Us</a></li>
+				<li><a id="timelineScroll">Timeline</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 		</div>
 	</nav>
+
+	<a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light cyan" style="display: block;">
+		<i class="mdi-hardware-keyboard-arrow-up"></i>
+	</a>
 
 	<!-- Content -->
 	 <div id="skrollr-body">
@@ -54,7 +60,7 @@
 			</div>
 
 			<!-- About us (What are we) -->
-			 <div class="container">
+			 <div class="container" id="about">
 				<div class="section">
 
 					<div class="row">
@@ -64,7 +70,6 @@
 							<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
 
@@ -81,7 +86,7 @@
 			</div>
 
 			<!-- Our Story (How we came to be) -->
-			 <div class="container">
+			 <div class="container" id="story">
 				<div class="section">
 
 					<!-- Title and Explanation of section -->
@@ -138,7 +143,7 @@
 			</div>
 
 			<!-- Join Us (How you can get started) -->
-			 <div class="container">
+			 <div class="container" id="join">
 				<div class="section">
 
 					<!-- Title and Explanation of section -->
@@ -186,8 +191,8 @@
 			 <div class="parallax-container valign-wrapper">
 				<div class="section no-pad-bot">
 					<div class="container">
-						<div class="row center">
-							<h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+						<div class="row center" id="timelineScroll">
+							<h5 class="header col s12 light"><i class="mdi-content-send"></i><br/>Scroll for more</h5>
 						</div>
 					</div>
 				</div>
@@ -198,11 +203,11 @@
 	</div>
 
 	<!-- Scrolling cards -->
-     <div class="row height-container">
+     <div class="row height-container" id="timeline">
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             One
@@ -216,13 +221,15 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick="nextCard()" >Next</button>
+                    <!-- <input type="button" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" value="Next" onclick="nextCard()"/> -->
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Two
@@ -236,13 +243,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Three
@@ -256,13 +264,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Four
@@ -276,13 +285,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Five
@@ -297,13 +307,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Six
@@ -317,13 +328,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Seven
@@ -337,13 +349,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Support
@@ -357,13 +370,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             Problem?
@@ -377,13 +391,14 @@
                 <div class="card-action {{ site.css }} darken-2">
                     <button href="{{ post.url | prepend: site.baseurl }}" class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn">View Post</button>
                     <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" href='#'>Bookmark!</button>
+                    <button class="{{ site.css }} darken-1 white-text text-darken-3 waves-effect waves-light btn" onclick='nextCard()'>Next</button>
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('{{site.baseurl}}/img/0.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
                     <div class="filter {{site.css}}">
                         <div class="cover-text {{ site.css }}-text text-darken-4">
                             <3
@@ -408,10 +423,10 @@
 	<!--  Scripts-->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/jquery.nicescroll.plus.js"></script>
+	<!-- <script src="js/jquery.nicescroll.plus.js"></script> -->
 	<script src="js/velocity.min.js"></script>
 	<script src="js/skrollr.min.js"></script>
-	<script src="js/jquery.scrolline.js"></script>
+	<!-- <script src="js/jquery.scrolline.js"></script> -->
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>

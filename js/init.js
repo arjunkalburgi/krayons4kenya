@@ -4,6 +4,31 @@
 	$('.button-collapse').sideNav();
 	$('.parallax').parallax();
 
+	// About Us
+	$("#aboutScroll").click(function(){
+		$("html, body").animate({scrollTop: $('#about').offset().top-$("nav").height()}, 2000)
+	});
+
+	// Our Story 
+	$("#storyScroll").click(function(){
+		$("html, body").animate({scrollTop: $('#story').offset().top-$("nav").height()}, 2000)
+	});
+
+	// Join Us
+	$("#joinScroll").click(function(){
+		$("html, body").animate({scrollTop: $('#join').offset().top-$("nav").height()}, 2000)
+	});
+
+	// Timeline
+	$("#timelineScroll").click(function(){
+		console.log("offset: " + $('#timeline').offset().top+435); 
+		$("html, body").animate({"scrollTop": $('#timeline').offset().top + 435}, 2000)
+		console.log("window: " + window.scrollY); 
+		// $("body").animate({"scrollTop": window.scrollY+290}, 1000);
+	});
+
+
+
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
@@ -77,10 +102,7 @@ function calcScrollr() {
 		count++;
 		
 	});
-
 }
-
-
 
 
 var s;
@@ -92,13 +114,13 @@ $(function () {
 		mousescrollstep: 72
 	});
 
-	$.scrolline({
-		reverse: false,
-		position: 'top',
-		backColor: '#2980b9',
-		frontColor: '#f1c40f',
-		weight: 5
-	});
+	// $.scrolline({
+	// 	reverse: false,
+	// 	position: 'top',
+	// 	backColor: '#2980b9',
+	// 	frontColor: '#f1c40f',
+	// 	weight: 5
+	// });
 });
 
 $(function () {
@@ -162,7 +184,6 @@ $(function () {
 	} else {
 		console.log("No support for in-page loading. Try using chrome.");
 	}
-
 });
 
 
@@ -183,9 +204,6 @@ $(document).ready(function () {
 		}, 800);
 		return false;
 	});
-
-
-
 });
 
 //preloader hide on load
@@ -200,6 +218,31 @@ $(window).load(function () {
 
 	calcScrollr();
 	s = skrollr.init();
+});
 
+function nextCard() {
+	$("body").animate({"scrollTop": window.scrollY+805}, 1000);
+	console.log("nextCard in action mudda baby");
+	// return false;
+	// return true;
+}
 
+function toCard() {
+	$("body").animate({"scrollTop": window.scrollY+290}, 1000);
+	console.log("toCard in action mudda baby");
+	// return false;
+	// return true;
+}
+
+// Nav bar style on position
+$(window).scroll(function (event) {
+	poop = $(window).scrollTop();
+	// console.log("we here", poop);
+	if (poop >= 1) {
+		$("nav").addClass("fixed-nav");
+	}
+	if (poop < 1) {
+		console.log("top");
+		$("nav").removeClass("fixed-nav");
+	}
 });
