@@ -6,6 +6,27 @@
  * Made By MaterializeCSS.com
  */
 
+ .light_bg {
+    background-color: #f6e5e4;
+    /*color: #66e5e4;*/
+ }
+
+ .light_highlight {
+    color: #fec24a !important;
+ }
+
+ .main_highlight {
+    color: #e7272d !important;
+ }
+
+ .dark_highlight {
+    color: #ae2a2f  !important;
+ }
+
+ .main_bg {
+    background-color: #e7272d;
+ }
+
 nav ul a,
 nav .brand-logo {
   color: #444;
