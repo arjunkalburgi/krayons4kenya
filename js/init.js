@@ -27,6 +27,8 @@
 		// $("body").animate({"scrollTop": window.scrollY+290}, 1000);
 	});
 
+	height = ($("#index-banner").height() - $(".image_captions").height())/2;
+	$(".image_captions").css({'padding':height+'px 0'}); 
 
 
   }); // end of document ready

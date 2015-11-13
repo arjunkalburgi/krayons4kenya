@@ -9,31 +9,32 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
 
 </head>
 <body class="light_bg">
 	<!-- Nav bar -->
 	 <nav class="main_bg" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="light_highlight brand-logo">Krayons 4 Kenya</a>
+			<a id="logo-container" href="#" class="light_highlight brand-logo"><img style="height: 64px;" src="img/k4k-small-yel.png"></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a id="aboutScroll" class="light_highlight">About Us</a></li>
 				<li><a id="storyScroll" class="light_highlight">Our Story</a></li>
-				<li><a id="joinScroll" class="light_highlight">Join Us</a></li>
-				<li><a id="timelineScroll" class="light_highlight">Timeline</a></li>
+				<li><a id="joinScroll" class="light_highlight">Learn More</a></li>
+				<!-- <li><a id="timelineScroll" class="light_highlight">Timeline</a></li> -->
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
 				<li><a id="aboutScroll" class="light_highlight">About Us</a></li>
 				<li><a id="storyScroll" class="light_highlight">Our Story</a></li>
-				<li><a id="joinScroll" class="light_highlight">Join Us</a></li>
-				<li><a id="timelineScroll" class="light_highlight">Timeline</a></li>
+				<li><a id="joinScroll" class="light_highlight">Learn More</a></li>
+				<!-- <li><a id="timelineScroll" class="light_highlight">Timeline</a></li> -->
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" class="light_highlight">menu</i></a>
 		</div>
 	</nav>
 
-	<a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light main_bg" style="display: block;">
+	<a class="darken-2 scrollToTop btn-floating btn-large waves-effect waves-light main_bg dark_highlight_hover" style="display: block;">
 		<i class="mdi-hardware-keyboard-arrow-up light_highlight"></i>
 	</a>
 
@@ -44,19 +45,11 @@
 		   	<!-- Top index banner -->
 			 <div id="index-banner" class="parallax-container">
 				<div class="section no-pad-bot">
-					<div class="container">
-						<br><br>
-						<h1 class="header center main_highlight" style="margin: 18%;">K4K logo here</h1>
-						<!-- <div class="row center">
-							<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-						</div>
-						<div class="row center">
-							<a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
-						</div> -->
-						<br><br>
+					<div class="container parallax_content">
+						<img class="image_captions" src="img/k4k-big-red.png">
 					</div>
 				</div>
-				<div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+				<div class="parallax"><img src="img/landing.JPG" alt="Unsplashed background img 1"></div>
 			</div>
 
 			<!-- About us (What are we) -->
@@ -64,10 +57,12 @@
 				<div class="section">
 
 					<div class="row dark_highlight">
-						<div class="col s12 center">
+						<div class="col s12 center md-trigger" data-modal="modal-about">
 							<h3><i class="mdi-content-send dark_highlight"></i></h3>
 							<h4>About Us</h4>
-							<p class="left-align light main_highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+							<div class="left-align dark_highlight center">We are a group of university students...
+								<div class="left-align light main_highlight center">(Click for more)</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -78,14 +73,14 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<div class="row center">
-							<h5 class="header col s12 dark_highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+							<h5 class="header col s12 dark_highlight">Meet the Team: Nik, Zosia, Jordan, Marcus and Arjun</h5>
 						</div>
 					</div>
 				</div>
-				<div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+				<div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
 			</div>
 
-			<!-- Our Story (How we came to be) -->
+			<!-- Mission Statement & Meet the Team -->
 			 <div class="container" id="story">
 				<div class="section dark_highlight">
 
@@ -93,37 +88,48 @@
 					 <div class="row">
 						<div class="col s12 center">
 							<h3><i class="mdi-content-send"></i></h3>
-							<h4>Our Story</h4>
-							<p class="left-align light main_highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. </p>
+							<h4>Mission Statement</h4>
+							<p class="left-align light main_highlight">Our goal is to provide the same quality of materials to the children in Kenya that we have available in North America so that they may have all the needed tools to 
+							achieve a high level of education and a future career. Although we are just starting 
+							up, we hope to develop our organization to a stable level so that regular shipments 
+							of supplies can be made each year.</p>
 						</div>
 					</div>
 					
-					<!-- Three fundamental parts of our story -->
+					<!-- People! -->
 					 <div class="row">
-						<div class="col s12 m4">
+						<div class="col s12 m4 md-trigger" data-modal="modal-nik">
 							<div class="icon-block">
 								<h2 class="center"><i class="material-icons">flash_on</i></h2>
-								<h5 class="center">Speeds up development</h5>
-
-								<p class="light main_highlight">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+								<h5 class="center">Nikola Viktorov</h5>
 							</div>
 						</div>
 
-						<div class="col s12 m4">
+						<div class="col s12 m4 md-trigger" data-modal="modal-zosia">
 							<div class="icon-block">
 								<h2 class="center"><i class="material-icons">group</i></h2>
-								<h5 class="center">User Experience Focused</h5>
-
-								<p class="light main_highlight">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+								<h5 class="center">Zosia Prus-­Czarnecka</h5>
 							</div>
 						</div>
 
-						<div class="col s12 m4">
+						<div class="col s12 m4 md-trigger" data-modal="modal-jordan">
 							<div class="icon-block">
 								<h2 class="center"><i class="material-icons">settings</i></h2>
-								<h5 class="center">Easy to work with</h5>
+								<h5 class="center">Jordan Titosky</h5>
+							</div>
+						</div>
 
-								<p class="light main_highlight">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+						<div class="col s12 m4 md-trigger" data-modal="modal-marcus">
+							<div class="icon-block">
+								<h2 class="center"><i class="material-icons">settings</i></h2>
+								<h5 class="center">Marcus Stack</h5>
+							</div>
+						</div>
+
+						<div class="col s12 m4 md-trigger" data-modal="modal-arjun">
+							<div class="icon-block">
+								<h2 class="center"><i class="material-icons">settings</i></h2>
+								<h5 class="center">Arjun Kalburgi</h5>
 							</div>
 						</div>
 					</div>
@@ -135,14 +141,14 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<div class="row center">
-							<h5 class="header col s12 light dark_highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+							<h5 class="header col s12 light dark_highlight">Students can't learn without supplies.</h5>
 						</div>
 					</div>
 				</div>
-				<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+				<div class="parallax"><img src="img/compare.JPG" alt="Unsplashed background img 3"></div>
 			</div>
 
-			<!-- Join Us (How you can get started) -->
+			<!-- Contact Us (How you can get started) -->
 			 <div class="container" id="join">
 				<div class="section dark_highlight">
 
@@ -150,42 +156,24 @@
 					 <div class="row">
 						<div class="col s12 center">
 							<h3><i class="mdi-content-send"></i></h3>
-							<h4>Join Us</h4>
-							<p class="left-align light main_highlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. </p>
+							<h4>Contact Us</h4>
+							<p class="left-align light main_highlight">We accept both monetary and material donations. All money will first go to paying
+							for the shipment of the Sea‐Can container ($15 000) and any leftover funds will go 
+							towards purchasing new supplies. In terms of material donations, we are primarily 
+							looking for school supplies such as backpacks, pencils, paper, notebooks, crayons, 
+							etc. Books in English for all ages will also be accepted however we ask that you do 
+							not send us textbooks as Point of Grace Academy already follows a fixed curriculum. 
+							If you would like to donate other items, we accept non‐perishable food, clothing 
+							(especially running shoes), and furniture. For miscellaneous items, please contact us 
+							with your idea so that we can ensure it will be put to good use.</p>
 						</div>
 					</div>
 					
-					<!-- Three fundamental parts of our story -->
-					 <div class="row">
-						<div class="col s12 m4">
-							<div class="icon-block">
-								<h2 class="center"><i class="material-icons">flash_on</i></h2>
-								<h5 class="center">Speeds up development</h5>
-
-								<p class="light main_highlight">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="icon-block">
-								<h2 class="center"><i class="material-icons">group</i></h2>
-								<h5 class="center">User Experience Focused</h5>
-
-								<p class="light main_highlight">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-							</div>
-						</div>
-
-						<div class="col s12 m4">
-							<div class="icon-block">
-								<h2 class="center"><i class="material-icons">settings</i></h2>
-								<h5 class="center">Easy to work with</h5>
-
-								<p class="light main_highlight">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
+
+		</div>
+	</div>
 
 			<!-- 4th divider -->
 			 <div class="parallax-container valign-wrapper">
@@ -196,18 +184,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+				<div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
 			</div>
 
-		</div>
-	</div>
 
-	<!-- Scrolling cards -->
+
+	<!-- Scrolling cards 
 	 <div class="row height-container main_highlight" id="timeline">
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             One
@@ -222,14 +209,13 @@
                     <button class="darken-1 text-darken-3 waves-effect waves-light btn main_bg light_highlight">View Post</button>
                     <button class="darken-1 text-darken-3 waves-effect waves-light btn main_bg light_highlight" href='#'>Bookmark!</button>
                     <button class="darken-1 text-darken-3 waves-effect waves-light btn main_bg light_highlight" onclick="nextCard()" >Next</button>
-                    <!-- <input type="button" class="darken-1 text-darken-3 waves-effect waves-light btn main_bg light_highlight" value="Next" onclick="nextCard()"/> -->
                 </div>
             </div>
         </div>
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Two
@@ -250,7 +236,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Three
@@ -271,7 +257,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Four
@@ -292,7 +278,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Five
@@ -314,7 +300,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Six
@@ -335,7 +321,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Seven
@@ -356,7 +342,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Support
@@ -377,7 +363,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             Problem?
@@ -398,7 +384,7 @@
 
         <div class="scroll-1">
             <div class="container-fluid card z-depth-2 waves-effect waves-light">
-                <div class="cover z-depth-1" style="background-image: url('background1.jpg');">
+                <div class="cover z-depth-1" style="background-image: url('img/background1.jpg');">
                     <div class="filter ">
                         <div class="cover-text text text-darken-4">
                             <3
@@ -418,9 +404,125 @@
                 </div>
             </div>
         </div>
-	</div>
+	</div>-->
+
+	<!-- Modal Window's -->
+		<div class="card md-modal md-effect-1" id="modal-about">
+			<div class="md-content">
+				<h3>About Us</h3>
+				<div>
+					<p>
+						We are a group of university students who have been incredibly lucky to receive the
+						quality of education that we have. Over the years, we’ve noticed that kids in our 
+						community often throw away school supplies that are almost in mint condition. Why 
+						not put these to better use? We have partnered with Point of Grace Academy, a K‐12 
+						school in Kenya started up by Reverend Dennis Meeker and his wife. They have 
+						done an incredible job of saving children from poverty and giving them not only a 
+						home and food, but also an education and a chance at going to university. There is 
+						however, a shortage of basic supplies such as pencils, notebooks and desks. We are 
+						currently collecting unwanted school supplies from local schools in Edmonton, 
+						Canada and are hoping to send our first Sea‐Can full of furniture, school supplies 
+						and food to Kenya by June 2016. 
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-modal md-effect-1" id="modal-nik">
+			<div class="md-content">
+				<h3>Nikola Viktorov</h3>
+				<div>
+					<p>
+						Nikola is in his third year of chemical engineering and also
+						the project manager of EcoCar; a student vehicle team which designs and 
+						builds a fuel cell car to race internationally for efficiency. Nikola owes some 
+						of his opportunities to the education he has received in Canada and hopes to 
+						improve access to education for students around the world. When not busy 
+						studying or working, Nikola spends his time traveling.
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-modal md-effect-1" id="modal-zosia">
+			<div class="md-content">
+				<h3>Zosia Prus-­Czarnecka</h3>
+				<div>
+					<p>
+						Zosia is a 3rd year undergraduate student at the
+						University of Alberta with a major in biological sciences and a minor in 
+						Spanish. She hopes to one day become a pediatric cardiac surgeon. In her 
+						spare time, she volunteers with the Canadian Ski Patrol, works as a ski 
+						instructor and loves to travel and sail.
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-modal md-effect-1" id="modal-jordan">
+			<div class="md-content">
+				<h3>Jordan Titosky</h3>
+				<div>
+					<p>
+						Jordan is currently working towards his MSc in Mechanical
+						Engineering at the University of Alberta. He is currently in his second year of 
+						this program and is anticipating to graduate in June 2016. Jordan is a 
+						member of a number of organizations in the community, including the 
+						Canadian Ski Patrol, and the Edmonton Football Officials association, where 
+						he is currently a member of the executive and hopes to one day officiate in 
+						the CFL. This year Jordan applied to the Faculty of Medicine to pursue his 
+						goal to become a cardiac surgeon.
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-modal md-effect-1" id="modal-marcus">
+			<div class="md-content">
+				<h3>Marcus Stack</h3>
+				<div>
+					<p>
+						Ciao is an app that allows you to better utilize the world around you by helping you turn the strangers nearby into acquaintances for your needs. Ciao is very well explained in the Devpost.
+						<br /><br />
+						Ciao was originally built during Hack the North, an international hackathon in Waterloo, ON. The Ciao that came out of the hackathon is an Ionic App and uses Facebook and Firebase to get and keep data. This method is less than ideal and I hope to work on Ciao more someday once I learn Android Development. Ciao can be produced much better as a native application, unfortunately my partner and I didn't have enough knowledge at the time to go this route during the competition. 
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="card md-modal md-effect-1" id="modal-arjun">
+			<div class="md-content">
+				<h3>Arjun Kalburgi</h3>
+				<div>
+					<p>
+						Arjun is a third year Computer Engineer at the University of Alberta.
+						Heavily involved in numerous activities, Arjun looks to grow as a person and 
+						developer to hopefully own his own company one day ‐ creating solutions for 
+						the world around us. Learn more on his website: <a href="https://www.arjunkalburgi.com">arjunkalburgi.com</a>
+					</p>
+					<button class="md-close">Close me!</button>
+				</div>
+			</div>
+		</div>
 
 	<!--  Scripts-->
+	<!-- classie.js by @desandro: https://github.com/desandro/classie -->
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+
+	<!-- for the blur effect -->
+	<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+	<script>
+		// this is important for IEs
+		var polyfilter_scriptpath = '/js/';
+	</script>
+	<script src="js/cssParser.js"></script>
+	<script src="js/css-filters-polyfill.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery.nicescroll.min.js"></script>
 	<!-- <script src="js/jquery.nicescroll.plus.js"></script> -->

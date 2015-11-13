@@ -6,6 +6,17 @@
  * Made By MaterializeCSS.com
  */
 
+ .image_captions {
+    width: 100%;
+ }
+
+ .parallax img {
+    width: inherit;
+ }
+ .parallax {
+    width: 100%;
+ }
+
  .light_bg {
     background-color: #f6e5e4;
     /*color: #66e5e4;*/
@@ -21,6 +32,9 @@
 
  .dark_highlight {
     color: #ae2a2f  !important;
+ }
+ .dark_highlight_hover:hover {
+    background-color: #ae2a2f  !important;
  }
 
  .main_bg {

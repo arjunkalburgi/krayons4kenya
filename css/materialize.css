@@ -5067,6 +5067,9 @@ span.badge {
     .row .col.s2 {
       width: 16.66667%;
       margin-left: 0; }
+    .row .col.s20 {
+      width: 20%;
+      margin-left: 0; }
     .row .col.s3 {
       width: 25%;
       margin-left: 0; }
