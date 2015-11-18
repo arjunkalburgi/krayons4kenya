@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<title>Krayons 4 Keyna</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="img/k4k-small-red.png">
 
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,20 +17,20 @@
 </head>
 <body class="light_bg">
 	<!-- Nav bar -->
-	 <nav class="main_bg" role="navigation">
+	 <nav class="dark_bg" role="navigation">
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="#" class="light_highlight brand-logo"><img style="height: 64px;" src="img/k4k-small-yel.png"></a>
 			<ul class="right hide-on-med-and-down">
 				<li><a id="aboutScroll" class="light_highlight">About Us</a></li>
-				<li><a id="storyScroll" class="light_highlight">Our Story</a></li>
-				<li><a id="joinScroll" class="light_highlight">Learn More</a></li>
+				<li><a id="storyScroll" class="light_highlight">Meet Us</a></li>
+				<li><a id="joinScroll" class="light_highlight">Contact Us</a></li>
 				<!-- <li><a id="timelineScroll" class="light_highlight">Timeline</a></li> -->
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
 				<li><a id="aboutScroll" class="light_highlight">About Us</a></li>
-				<li><a id="storyScroll" class="light_highlight">Our Story</a></li>
-				<li><a id="joinScroll" class="light_highlight">Learn More</a></li>
+				<li><a id="storyScroll" class="light_highlight">Meet Us</a></li>
+				<li><a id="joinScroll" class="light_highlight">Contact Us</a></li>
 				<!-- <li><a id="timelineScroll" class="light_highlight">Timeline</a></li> -->
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" class="light_highlight">menu</i></a>
@@ -46,7 +49,7 @@
 			 <div id="index-banner" class="parallax-container">
 				<div class="section no-pad-bot">
 					<div class="container parallax_content">
-						<img class="image_captions" src="img/k4k-big-red.png">
+						<img class="image_captions" src="img/k4k-big-yel.png">
 					</div>
 				</div>
 				<div class="parallax"><img src="img/landing.JPG" alt="Unsplashed background img 1"></div>
@@ -54,15 +57,29 @@
 
 			<!-- About us (What are we) -->
 			 <div class="container light_bg" id="about">
-				<div class="section">
+				<div class="section  dark_highlight">
+					<h2 class="header text_b">About Us</h2>
 
-					<div class="row dark_highlight">
-						<div class="col s12 center md-trigger" data-modal="modal-about">
-							<h3><i class="mdi-content-send dark_highlight"></i></h3>
-							<h4>About Us</h4>
-							<div class="left-align dark_highlight center">We are a group of university students...
+					<div class="row">
+						<div class="col s12 md-trigger" data-modal="modal-about">
+							<!-- <h3><i class="mdi-content-send dark_highlight"></i></h3> -->
+							<!-- <h4>About Us</h4> -->
+							<h4 class="left-align text_h2 light"> 
+						We are a group of university students who have been incredibly lucky to receive the
+						quality of education that we have. Over the years, we’ve noticed that kids in our 
+						community often throw away school supplies that are almost in mint condition. Why 
+						not put these to better use? We have partnered with Point of Grace Academy, a K‐12 
+						school in Kenya started up by Reverend Dennis Meeker and his wife. They have 
+						done an incredible job of saving children from poverty and giving them not only a 
+						home and food, but also an education and a chance at going to university. There is 
+						however, a shortage of basic supplies such as pencils, notebooks and desks. We are 
+						currently collecting unwanted school supplies from local schools in Edmonton, 
+						Canada and are hoping to send our first Sea‐Can full of furniture, school supplies 
+						and food to Kenya by June 2016.
+							</h4>
+							<!-- <div class="left-align dark_highlight center">We are a group of university students...
 								<div class="left-align light main_highlight center">(Click for more)</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -83,16 +100,17 @@
 			<!-- Mission Statement & Meet the Team -->
 			 <div class="container" id="story">
 				<div class="section dark_highlight">
+					<h2 class="header text_b">Meet Us</h2>
 
 					<!-- Title and Explanation of section -->
 					 <div class="row">
-						<div class="col s12 center">
-							<h3><i class="mdi-content-send"></i></h3>
-							<h4>Mission Statement</h4>
-							<p class="left-align light main_highlight">Our goal is to provide the same quality of materials to the children in Kenya that we have available in North America so that they may have all the needed tools to 
+						<div class="col s12">
+							<!-- <h3><i class="mdi-content-send"></i></h3> -->
+							<!-- <h4>Mission Statement</h4> -->
+							<h4 class="left-align text_h2 light">Our goal is to provide the same quality of materials to the children in Kenya that we have available in North America so that they may have all the needed tools to 
 							achieve a high level of education and a future career. Although we are just starting 
 							up, we hope to develop our organization to a stable level so that regular shipments 
-							of supplies can be made each year.</p>
+							of supplies can be made each year.</h4>
 						</div>
 					</div>
 					
@@ -128,7 +146,7 @@
 
 						<div class="col s12 m4 md-trigger" data-modal="modal-arjun">
 							<div class="icon-block">
-								<h2 class="center"><i class="material-icons">settings</i></h2>
+								<h2 class="center"><i class="material-icons">computer</i></h2>
 								<h5 class="center">Arjun Kalburgi</h5>
 							</div>
 						</div>
@@ -149,10 +167,84 @@
 			</div>
 
 			<!-- Contact Us (How you can get started) -->
-			 <div class="container" id="join">
-				<div class="section dark_highlight">
+			 <div class="container dark_highlight" id="join">  
+				<h2 class="header text_b">Contact Us</h2>
+				<div class="row">
+					<div class="col l12 s12">
+						<!-- <h5 class="">Email Me</h5> -->
+						<!-- THANK YOU RESPONSE-O-MATIC FOR THE FORM -->
+						<!-- Begin Response-O-Matic Form -->
+						<!-- DO NOT EDIT YOUR FORM HERE, PLEASE LOG IN AND EDIT AT RESPONSE-O-MATIC.COM -->
+						<form enctype="multipart/form-data" method="post" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
+							<div>
+								<input type="hidden" name="acctid" id="acctid" value="btlsg8au7sw1uu8p" />
+								<input type="hidden" name="formid" id="formid" value="1279216" />
+								<input type="hidden" name="required_vars" id="required_vars" value="name,email,field-efc9fd4e3282567" />
+							</div>
+							<div class="row">
+								<div class="input-field col s6">
+									<i class="mdi-action-account-circle prefix "></i>
+									<input type="text" class="validate " id="icon_prefix" name="name" id="name" value="" />
+									<label for="icon_prefix" class="">Name</label>
+								</div>
+								<div class="input-field col s6">
+									<i class="mdi-communication-email prefix "></i>
+									<input type="email" class="validate " id="icon_email" name="email" id="email" value="" >
+									<label for="icon_email" class="">Email-ID</label>
+								</div>
+								<div class"input-field col s12">
+									How are you interested in helping?
+								    <p>
+										<input type="radio" name="field-d966b07253f5262" id="field-d966b07253f5262_0" value="Donate" />
+										<label for="field-d966b07253f5262_0">Donate</label>
+									</p>
+									<p>
+										<input type="radio" name="field-d966b07253f5262" id="field-d966b07253f5262_1" value="Volunteer" />
+										<label for="field-d966b07253f5262_1">Volunteer</label>
+									</p>
+									<p>
+										<input type="radio" name="field-d966b07253f5262" id="field-d966b07253f5262_2" value="Other" />
+										<label for="field-d966b07253f5262_2">Other</label>
+									</p>
+								</div>
+								<div class="input-field col s12">
+									<i class="mdi-editor-mode-edit prefix "></i>
+									<textarea id="icon_prefix2" class="materialize-textarea " name="field-efc9fd4e3282567" id="field-efc9fd4e3282567"  ></textarea>
+									<label for="icon_prefix2" class="">Message</label>
+								</div>
+								<div class="col offset-s7 s5">
+									<button class="btn waves-effect waves-light red darken-1" type="submit" name="action">Submit
+										<i class="mdi-content-send right "></i>
+									</button>
+								</div>
 
-					<!-- Title and Explanation of section -->
+							</div>
+						</form>
+					</div>
+					<!-- <div class="social col l12 s12">
+						<h5 class="">Social</h5>
+						<ul>
+							<li class="contact-media-links">
+								<a class="" href="https://plus.google.com/+ArjunKalburgi/posts" target="_blank">
+									<i class="small fa fa-google-plus-square "></i> Google+
+								</a>
+							</li>
+							<li class="contact-media-links">
+								<a class="" href="https://github.com/askalburgi" target="_blank">
+									<i class="small fa fa-github-square "></i> Github
+								</a>
+							</li>
+							<li class="contact-media-links">
+								<a class="" href="https://ca.linkedin.com/pub/arjun-kalburgi/58/250/82b" target="_blank">
+									<i class="small fa fa-linkedin-square "></i> Linkedin
+								</a>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+			<!--  <div class="container" id="join">
+				<div class="section dark_highlight">
 					 <div class="row">
 						<div class="col s12 center">
 							<h3><i class="mdi-content-send"></i></h3>
@@ -170,12 +262,12 @@
 					</div>
 					
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
 
-			<!-- 4th divider -->
+			<!-- 4th divider
 			 <div class="parallax-container valign-wrapper">
 				<div class="section no-pad-bot">
 					<div class="container">
@@ -185,7 +277,7 @@
 					</div>
 				</div>
 				<div class="parallax"><img src="img/background3.jpg" alt="Unsplashed background img 3"></div>
-			</div>
+			</div> -->
 
 
 
@@ -503,12 +595,13 @@
 						Arjun is a third year Computer Engineer at the University of Alberta.
 						Heavily involved in numerous activities, Arjun looks to grow as a person and 
 						developer to hopefully own his own company one day ‐ creating solutions for 
-						the world around us. Learn more on his website: <a href="https://www.arjunkalburgi.com">arjunkalburgi.com</a>
+						the world around us. Learn more on his website: <a href="http://www.arjunkalburgi.com">arjunkalburgi.com</a>
 					</p>
 					<button class="md-close">Close me!</button>
 				</div>
 			</div>
 		</div>
+		<div class="md-overlay"></div>
 
 	<!--  Scripts-->
 	<!-- classie.js by @desandro: https://github.com/desandro/classie -->

@@ -40,6 +40,9 @@
  .main_bg {
     background-color: #e7272d;
  }
+ .dark_bg {
+    background-color: #ae2a2f;
+ }
 
 nav ul a,
 nav .brand-logo {
